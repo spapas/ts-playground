@@ -1,10 +1,21 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 // import App from './App';
-import Hello from './components/Hello';
 import './index.css';
 import './mystyle.css';
 import registerServiceWorker from './registerServiceWorker';
+import { createStore } from 'redux';
+import { enthusiasm } from './reducers/index';
+import { IStoreState } from './types/index';
+
+import { EnthusiasmAction } from './actions/index';
+import Hello from './containers/Hello';
+import { Provider } from 'react-redux';
+
+const store = createStore<IStoreState, EnthusiasmAction, any, any>(enthusiasm, {
+  enthusiasmLevel: 1,
+  languageName: 'TypeScript',
+});
 
 ReactDOM.render(
   <div>
@@ -121,7 +132,9 @@ ReactDOM.render(
         </div>
       </div>
     </section>
-    <Hello name="Ελλάδα" enthusiasmLevel={10} />
+    <Provider store={store}>
+      <Hello /> 
+    </Provider>
   </div>,
   document.getElementById('root') as HTMLElement
 );
