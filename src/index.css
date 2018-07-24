@@ -1,2 +1,14 @@
 body {
-  background-color: red; }
+  background-color: #a6cff1; }
+
+.hello {
+  text-align: center;
+  margin: 20px;
+  font-size: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+.hello button {
+  margin-left: 25px;
+  margin-right: 25px;
+  font-size: 20px;
+  min-width: 50px; }
