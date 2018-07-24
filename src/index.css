@@ -1,11 +1,7 @@
-body {
-  background-color: #a6cff1; }
-
 .hello {
   text-align: center;
   margin: 20px;
-  font-size: 2rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+  font-size: 2rem; }
 
 .hello button {
   margin-left: 25px;
