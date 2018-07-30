@@ -22,8 +22,6 @@ describe('hello container', () => {
         component.dive().find("button#dec").simulate("click");
         expect(store.isActionDispatched(actions.decrementEnthusiasm())).toBe(true);
 
-        console.log(actions.decrementEnthusiasm())
-        console.log(actions.incrementEnthusiasm())
         component.dive().find("button#inc").simulate("click");
         expect(store.isActionDispatched(actions.incrementEnthusiasm())).toBe(true);
     });
