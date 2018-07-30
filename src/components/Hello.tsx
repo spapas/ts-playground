@@ -18,8 +18,8 @@ function Hello({ name, enthusiasmLevel = 1, onIncrement, onDecrement}: IProps) {
         Hello {name + getExclamationMarks(enthusiasmLevel)}
       </div>
       <div>
-        <button className='button is-primary' onClick={onDecrement}>-</button>
-        <button className='button is-primary' onClick={onIncrement}>+</button>
+        <button id='dec' className='button is-primary' onClick={onDecrement}>-</button>
+        <button id='inc' className='button is-primary' onClick={onIncrement}>+</button>
       </div>
     </div>
   );

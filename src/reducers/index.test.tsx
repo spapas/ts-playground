@@ -2,6 +2,10 @@ import { enthusiasm } from './index';
 import * as actions from '../actions';
 
 describe('reducers', () => {
+    it('should return the initial state', () => {
+
+        expect(enthusiasm({'koko':33}, {})).toEqual({'koko': 33});
+    });
     it('should increment the enthusiasm', () => {
         let state = {
             enthusiasmLevel: 1,
