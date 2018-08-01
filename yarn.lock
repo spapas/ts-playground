@@ -26,6 +26,13 @@
   dependencies:
     "@types/enzyme" "*"
 
+"@types/enzyme-redux@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@types/enzyme-redux/-/enzyme-redux-0.2.0.tgz#f303484b73b92ec480550d6f3f5facd63681decb"
+  dependencies:
+    "@types/enzyme" "*"
+    "@types/react" "*"
+
 "@types/enzyme@*", "@types/enzyme@^3.1.12":
   version "3.1.12"
   resolved "https://registry.yarnpkg.com/@types/enzyme/-/enzyme-3.1.12.tgz#293bb07c1ef5932d37add3879e72e0f5bc614f3c"
@@ -60,6 +67,12 @@
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.4.6.tgz#5024957c6bcef4f02823accf5974faba2e54fada"
   dependencies:
     csstype "^2.2.0"
+
+"@types/redux-test-utils@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@types/redux-test-utils/-/redux-test-utils-0.2.0.tgz#372fb9e2f55a24dd9d257b91257edbae146505c2"
+  dependencies:
+    redux "^3.6.0"
 
 abab@^1.0.4:
   version "1.0.4"
@@ -4475,7 +4488,7 @@ locate-path@^2.0.0:
     p-locate "^2.0.0"
     path-exists "^3.0.0"
 
-lodash-es@^4.17.5:
+lodash-es@^4.17.5, lodash-es@^4.2.1:
   version "4.17.10"
   resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.10.tgz#62cd7104cdf5dd87f235a837f0ede0e8e5117e05"
 
@@ -4552,7 +4565,7 @@ lodash.uniq@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
 
-"lodash@>=3.5 <5", lodash@^4.0.0, lodash@^4.13.1, lodash@^4.15.0, lodash@^4.17.10, lodash@^4.17.2, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.3.0, lodash@~4.17.10:
+"lodash@>=3.5 <5", lodash@^4.0.0, lodash@^4.13.1, lodash@^4.15.0, lodash@^4.17.10, lodash@^4.17.2, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.2.1, lodash@^4.3.0, lodash@~4.17.10:
   version "4.17.10"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.10.tgz#1b7793cf7259ea38fb3661d4d38b3260af8ae4e7"
 
@@ -6240,6 +6253,15 @@ redux-test-utils@^0.2.2:
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/redux-test-utils/-/redux-test-utils-0.2.2.tgz#593213f30173c5908f72315f08b705e1606094fe"
 
+redux@^3.6.0:
+  version "3.7.2"
+  resolved "https://registry.yarnpkg.com/redux/-/redux-3.7.2.tgz#06b73123215901d25d065be342eb026bc1c8537b"
+  dependencies:
+    lodash "^4.2.1"
+    lodash-es "^4.2.1"
+    loose-envify "^1.1.0"
+    symbol-observable "^1.0.3"
+
 redux@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/redux/-/redux-4.0.0.tgz#aa698a92b729315d22b34a0553d7e6533555cc03"
@@ -7155,7 +7177,7 @@ sw-toolbox@^3.4.0:
     path-to-regexp "^1.0.1"
     serviceworker-cache-polyfill "^4.0.0"
 
-symbol-observable@^1.2.0:
+symbol-observable@^1.0.3, symbol-observable@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-1.2.0.tgz#c22688aed4eab3cdc2dfeacbb561660560a00804"
 

@@ -2,38 +2,34 @@ import { enthusiasm } from './index';
 import * as actions from '../actions';
 
 describe('reducers', () => {
-    it('should return the initial state', () => {
-
-        expect(enthusiasm({'koko':33}, {})).toEqual({'koko': 33});
-    });
     it('should increment the enthusiasm', () => {
-        let state = {
+        const state = {
             enthusiasmLevel: 1,
-            foo: 123
+            languageName: 'bar'
         }
 
-        let new_state = enthusiasm(state, actions.incrementEnthusiasm());
+        const newState = enthusiasm(state, actions.incrementEnthusiasm());
         state.enthusiasmLevel+=1;
-        expect(new_state).toEqual(state);
+        expect(newState).toEqual(state);
     });
 
     it('should decrement the enthusiasm', () => {
-        let state = {
+        const state = {
             enthusiasmLevel: 5,
-            foo: 123
+            languageName: 'bar'
         }
 
-        let new_state = enthusiasm(state, actions.decrementEnthusiasm());
+        const newState = enthusiasm(state, actions.decrementEnthusiasm());
         state.enthusiasmLevel-=1;
-        expect(new_state).toEqual(state);
+        expect(newState).toEqual(state);
     });
     it('should not decrement the enthusiasm below 1', () => {
-        let state = {
+        const state = {
             enthusiasmLevel: 1,
-            foo: 123
+            languageName: 'bar'
         }
 
-        let new_state = enthusiasm(state, actions.decrementEnthusiasm());
-        expect(new_state).toEqual(state);
+        const newState = enthusiasm(state, actions.decrementEnthusiasm());
+        expect(newState).toEqual(state);
     });
 })
