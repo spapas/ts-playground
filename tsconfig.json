@@ -1,5 +1,7 @@
 {
+  "compileOnSave": true,
   "compilerOptions": {
+    "watch": true,
     "baseUrl": ".",
     "outDir": "build/dist",
     "module": "esnext",
