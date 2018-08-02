@@ -1,8 +1,9 @@
 @charset "utf-8";
 
 // Import a Google Font
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
-@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,700&amp;subset=greek');
+//@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+//@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,700&amp;subset=greek');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,700&amp;subset=greek');
 
 // Set your brand colors
 $purple: rgb(207, 78, 164);
@@ -12,7 +13,7 @@ $beige-light: #D0D1CD;
 $beige-lighter: rgb(230, 230, 230);
 
 // Update Bulma's global variables
-$family-sans-serif: 'Nunito', sans-serif;
+$family-sans-serif: 'Fira Sans', sans-serif;
 $body-size: 18px;
 
 $grey-dark: $brown;
@@ -29,4 +30,4 @@ $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
 
-@import "../node_modules/bulma/bulma.sass";
+@import "../../node_modules/bulma/bulma.sass";

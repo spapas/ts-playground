@@ -12,8 +12,8 @@
     "redux": "^4.0.0"
   },
   "scripts": {
-    "build-css": "node-sass-chokidar src/ -o src/",
-    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "build-css": "node-sass-chokidar src/sass/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/sass/ -o src/ --watch --recursive",
     "analyze": "source-map-explorer build/static/js/main.*",
     "start": "react-scripts-ts start",
     "build": "react-scripts-ts build",
