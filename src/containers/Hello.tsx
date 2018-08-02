@@ -21,3 +21,4 @@ export function mapDispatchToProps(dispatch: Dispatch<actions.EnthusiasmAction>)
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Hello);
+export const Hello2 = connect(mapStateToProps, mapDispatchToProps)(Hello);

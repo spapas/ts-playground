@@ -10,6 +10,7 @@ import { IStoreState } from './types/index';
 
 import { EnthusiasmAction } from './actions/index';
 import Hello from './containers/Hello';
+import { Hello2 } from './containers/Hello';
 import { Provider } from 'react-redux';
 
 const store = createStore<IStoreState, EnthusiasmAction, any, any>(enthusiasm, {
@@ -134,6 +135,10 @@ ReactDOM.render(
     </section>
     <Provider store={store}>
       <Hello /> 
+    </Provider>
+    <hr />
+    <Provider store={store}>
+        <Hello2 />
     </Provider>
   </div>,
   document.getElementById('root') as HTMLElement

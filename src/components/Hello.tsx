@@ -25,7 +25,12 @@ function Hello({ name, enthusiasmLevel = 1, onIncrement, onDecrement}: IProps) {
   );
 }
 
+export const Hello2: React.SFC<IProps> = props => {
+    return <Hello {...props} />
+}
+
 export default Hello;
+
 
 // helpers
 
